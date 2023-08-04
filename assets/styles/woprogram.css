@@ -1,0 +1,128 @@
+.--workoutprogram-wrapper {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 1400px;
+}
+.--workoutprogram-container {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.--workheader {
+  position: relative;
+  width: 100%;
+}
+.--workheader > h1 {
+  position: relative;
+  color: var(--darkcolor);
+  text-align: center;
+  font-family: var(--mainfont);
+  font-size: clamp(1.5625rem, 1.0156rem + 2.7344vw, 3.75rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.--workheader::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: clamp(120px, 13.3333vw, 900px);
+  transform: translate(-50%, -50%);
+  height: 4px;
+  background-color: var(--maincolor);
+  z-index: -1;
+}
+.--workheader::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: var(--maincolor);
+  z-index: -1;
+}
+.--workoutcard-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 0 1.3rem;
+}
+.--workoutcards {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.--workoutcards img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  filter: brightness(50%);
+}
+.--workoutcards h3 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  font-family: var(--maincolor);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.--worktitle {
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  box-shadow: 0px 4px 0px 0px #000;
+  background: #f15025;
+}
+.--worktitle h1 {
+  color: #fff;
+  text-align: center;
+  font-family: var(--mainfont);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .--workoutcard-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media only screen and (min-width: 769px) {
+  .--workoutprogram-container {
+    margin: 10rem auto;
+  }
+  .--main-aboutcontent {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .--aboutmeinfo {
+    margin-top: 3rem;
+  }
+  .--about-wrapper {
+    gap: 3.5rem;
+  }
+  .--workoutcard-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

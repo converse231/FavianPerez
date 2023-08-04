@@ -127,17 +127,3 @@
   background: #f15025;
   padding: 0.5rem 1.5rem;
 }
-
-@media only screen and (min-width: 769px) {
-  .--main-aboutcontent {
-    align-items: flex-start;
-    flex-direction: row;
-    gap: 5rem;
-  }
-  .--aboutmeinfo {
-    margin-top: 3rem;
-  }
-  .--about-wrapper {
-    gap: 3.5rem;
-  }
-}
