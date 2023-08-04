@@ -33,7 +33,7 @@
 
   top: 50%;
   width: 100%;
-  max-width: 15%;
+  max-width: min(35%, calc(15% + (100vw - 320px) * 0.2));
   height: 4px;
   background-color: var(--maincolor);
   z-index: -1;
@@ -44,7 +44,7 @@
   left: 0;
   top: 50%;
   width: 100%;
-  max-width: min(35%, 15vw);
+  max-width: min(35%, calc(15% + (100vw - 320px) * 0.2));
   height: 4px;
   background-color: var(--maincolor);
   z-index: -1;
