@@ -55,7 +55,7 @@ body {
   padding: 0;
   display: flex;
   list-style: none;
-transition: .3s;
+  transition: 0.3s;
 }
 
 .hamburger.active .line1 {
@@ -114,6 +114,7 @@ transition: .3s;
     max-width: 26px;
     height: auto;
     margin: 0 3px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -248,10 +249,10 @@ transition: .3s;
     position: absolute;
   }
 }
-.division{
-    height: 20px;
-    width: 100%;
-    background-color: #fff;
+.division {
+  height: 20px;
+  width: 100%;
+  background-color: #fff;
 }
 .hero-section {
   width: 100%;
