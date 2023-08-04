@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 .--followers-container {
   margin: 0 auto;
@@ -66,13 +66,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3.5rem;
 }
 .--aboutimg-container {
   position: relative;
-  margin: 0 auto;
+
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .--aboutimg-container::before {
@@ -88,7 +88,7 @@
 .--aboutimg-container img {
   display: block;
   width: 100%;
-  max-width: 400px;
+  width: clamp(220px, 58.49vw, 370px);
   height: auto;
 }
 .--aboutmeinfo {
@@ -130,6 +130,14 @@
 
 @media only screen and (min-width: 769px) {
   .--main-aboutcontent {
+    align-items: flex-start;
     flex-direction: row;
+    gap: 5rem;
+  }
+  .--aboutmeinfo {
+    margin-top: 3rem;
+  }
+  .--about-wrapper {
+    gap: 3.5rem;
   }
 }
