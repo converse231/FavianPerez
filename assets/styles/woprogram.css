@@ -107,7 +107,7 @@
 }
 
 .--workoutcards:hover .--worktitle p {
-  max-height: 100px; /* Adjust this value based on your content */
+  max-height: 100px;
 }
 .--workoutcards:hover .--title {
   font-size: 30px;
