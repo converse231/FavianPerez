@@ -199,15 +199,24 @@ body {
   .hero-img-wrapper {
     display: none;
   }
-}
-@media screen and (max-width: 768px) {
   .social-links-hero {
     left: 0;
     position: absolute;
   }
   .hero-text-wrapper {
-    right: 0;
-    left: 10%;
+    left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-text-header {
+    font-size: 65px;
+  }
+  .hero-text-wrapper {
+    left: 23%;
     position: absolute;
+  }
+  .hero-btn {
+    height: 35px;
+    width: 190px;
   }
 }
