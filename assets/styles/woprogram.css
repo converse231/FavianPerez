@@ -113,6 +113,16 @@
   font-size: 30px;
   transition: 0.3s ease;
 }
+.--workoutcards.clicked .--worktitle p {
+  max-height: 100px;
+  transition: max-height 0.3s ease;
+}
+
+.--workoutcards.clicked .--title {
+  font-size: 30px;
+  transition: font-size 0.3s ease;
+}
+
 .--worktitle h1 {
   color: #fff;
   text-align: center;
