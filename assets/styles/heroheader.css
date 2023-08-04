@@ -1,23 +1,16 @@
-body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: var(--mainfont);
-}
-
 .navbar {
   background-color: #ffffff;
   color: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5rem;
+  padding: 0 6.25rem;
   height: 134px;
 }
 
 .logo {
   width: 100%;
-  max-width: 150px;
+  max-width: 191px;
   height: auto;
 }
 
@@ -50,6 +43,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1.88rem;
 }
 .links {
   padding: 0;
@@ -75,12 +69,16 @@ body {
   justify-content: center;
 }
 .links {
-  padding: 0;
+  gap: 1.69rem;
   display: flex;
   list-style: none;
 }
+
+.links li a {
+  font-size: 0.875rem;
+}
+
 .nav-links li {
-  padding: 0 1rem;
   font-weight: 600;
 }
 
@@ -93,14 +91,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.19rem;
 }
 
 .social-links img {
   width: 100%;
-  max-width: 26px;
+  max-width: 24px;
   height: auto;
-  margin: 0 3px;
 }
 
 @media screen and (max-width: 768px) {
@@ -162,7 +162,7 @@ body {
 .hero-section {
   width: 100%;
   height: 595px;
-  background-color: #000;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,7 +257,7 @@ body {
 .hero-section {
   width: 100%;
   height: 595px;
-  background-color: #000;
+  background-color: #0f0f0f;
   display: flex;
   justify-content: center;
   align-items: center;
