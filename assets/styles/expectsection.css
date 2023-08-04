@@ -1,0 +1,111 @@
+.--expect-container {
+  background-image: url(../images/background-expect.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 5rem 1.3rem 5rem;
+  min-height: 766px;
+}
+
+.--expect-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.--expect-wrapper h1 {
+  color: #fff;
+  font-size: clamp(1.5625rem, 1.3281rem + 1.1719vw, 2.5rem);
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+  font-family: var(--mainfont);
+}
+
+.--expectlist-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2.44rem 0 6rem;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.--expectlist-left,
+.--expectlist-right {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.--list-container {
+  display: flex;
+  max-width: 428px;
+  gap: 3px;
+}
+
+.--list-container img {
+  width: 24px;
+  height: 24px;
+}
+
+.--list-container p {
+  color: #fff;
+  font-family: Blinker;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.--journey-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 6px;
+}
+
+.--journey-container button {
+  background-color: #f15025;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  line-height: normal;
+  font-family: var(--mainfont);
+  max-width: 400px;
+  padding: 1.12rem 7.2rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.--journey-container button:hover {
+  color: #f15025;
+  background-color: #fff;
+}
+
+.--journey-container p {
+  color: #fff;
+  text-align: center;
+  font-family: Blinker;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+@media only screen and (min-width: 769px) {
+  .--expectlist-container {
+    flex-direction: row;
+    padding: 2.44rem 5rem 8rem;
+    gap: 12rem;
+    align-items: baseline;
+  }
+}
