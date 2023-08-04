@@ -1,0 +1,128 @@
+.--about-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 1.3rem;
+}
+.--about-wrapper {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.--followers-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 1.2rem;
+  flex-wrap: nowrap;
+  max-width: 800px;
+}
+.divider {
+  width: 3px;
+  height: clamp(50px, 11.3846vw, 120px);
+  background-color: #000;
+}
+.--followers-container h1 {
+  font-family: var(--secondfont);
+  color: #000;
+  font-size: clamp(1rem, 0.4519rem + 2.9231vw, 3.375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+  margin-bottom: clamp(-0.6rem, -1rem + 2.9231vw, -1rem);
+}
+.--followers-container p {
+  color: #000;
+  font-family: var(--mainfont);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.--followers-container .--ig-followers {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.--followers-container .--tiktok-followers,
+.--yt-followers {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0;
+}
+.--main-aboutcontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.--aboutimg-container {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.--aboutimg-container::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: -25px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--maincolor);
+  z-index: -1;
+}
+.--aboutimg-container img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+.--aboutmeinfo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.--aboutmeinfo h1 {
+  color: #000;
+  font-size: clamp(1.5625rem, 1.3281rem + 1.1719vw, 2.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: var(--mainfont);
+}
+.--aboutmeinfo p {
+  color: #000;
+  font-family: var(--mainfont);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.--aboutmeinfo a {
+  color: #fff;
+  text-align: center;
+  font-family: var(--mainfont);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 10px;
+  background: #f15025;
+  padding: 0.8rem 1.5rem;
+}

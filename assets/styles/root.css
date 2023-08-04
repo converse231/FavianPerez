@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Koulen&display=swap");
+:root {
+  --mainfont: "Blinker", sans-serif;
+  --secondfont: "Koulen", cursive;
+  --maincolor: rgba(241, 80, 37, 1);
+  --darkcolor: rgba(15, 15, 15, 1);
+}
