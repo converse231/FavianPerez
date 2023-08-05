@@ -1,9 +1,8 @@
 .--expect-container {
   background-image: url(../images/background-expect.png);
-  background-position: center;
+  background-position: top;
   background-size: cover;
   position: relative;
-  max-width: 1440px;
   margin: 0 auto;
   height: 100%;
   padding: 5rem 1.3rem 5rem;

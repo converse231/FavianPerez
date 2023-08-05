@@ -29,10 +29,11 @@
 .--workheader::before {
   content: "";
   position: absolute;
-  left: 0;
+  right: 0;
+
   top: 50%;
-  width: clamp(120px, 13.3333vw, 900px);
-  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: min(35%, calc(15% + (100vw - 320px) * 0.2));
   height: 4px;
   background-color: var(--maincolor);
   z-index: -1;
@@ -40,10 +41,10 @@
 .--workheader::after {
   content: "";
   position: absolute;
-  right: 0;
-  top: 55%;
-  transform: translateY(-50%);
-  width: 60px;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  max-width: min(35%, calc(15% + (100vw - 320px) * 0.2));
   height: 4px;
   background-color: var(--maincolor);
   z-index: -1;
@@ -58,10 +59,10 @@
   position: relative;
   display: flex;
   align-items: center;
-
   flex-direction: column;
   align-self: stretch;
   justify-content: stretch;
+  cursor: pointer;
 }
 
 .--workoutcards img {
@@ -80,16 +81,49 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  transition: 0.5s ease;
 }
 .--worktitle {
+  position: relative;
   width: 100%;
   padding: 0.5rem;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-
   box-shadow: 0px 4px 0px 0px #000;
   background: #f15025;
 }
+.--worktitle p {
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  font-family: Blinker;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.--workoutcards:hover .--worktitle p {
+  max-height: 100px;
+}
+.--workoutcards:hover .--title {
+  font-size: 30px;
+  transition: 0.3s ease;
+}
+.--workoutcards.clicked .--worktitle p {
+  max-height: 100px;
+  transition: max-height 0.3s ease;
+}
+
+.--workoutcards.clicked .--title {
+  font-size: 30px;
+  transition: font-size 0.3s ease;
+}
+
 .--worktitle h1 {
   color: #fff;
   text-align: center;

@@ -43,7 +43,7 @@
   <body>
     <nav class="navbar">
       <img src="./assets/images/Logo.png" class="logo" />
-      <div class="hamburger" onclick="toggleMenu()">
+      <div class="hamburger">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
@@ -56,10 +56,13 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="social-links">
-          <a href="https://www.tiktok.com"
+          <a
+            href="https://www.tiktok.com/@fperez_13 
+          "
+            target="_blank"
             ><img src="./assets/images/TikTok.png" alt="TikTok"
           /></a>
-          <a href="https://www.instagram.com"
+          <a href="https://www.instagram.com/f.perez._/" target="_blank"
             ><img src="./assets/images/Instagram.png" alt="Instagram"
           /></a>
           <a href="https://www.youtube.com"
@@ -89,10 +92,13 @@
       <div class="social-links-hero">
         <span>Follow me on</span>
         <div>
-          <a href="https://www.tiktok.com"
+          <a
+            href="https://www.tiktok.com/@fperez_13 
+          "
+            target="_blank"
             ><img src="./assets/images/TikTok1.png" alt="TikTok"
           /></a>
-          <a href="https://www.instagram.com"
+          <a href="https://www.instagram.com/f.perez._/" target="_blank"
             ><img src="./assets/images/Instagram1.png" alt="Instagram"
           /></a>
           <a href="https://www.youtube.com"
@@ -167,23 +173,43 @@
                 alt="wala-pa"
                 class="nice"
               />
-              <h3>$30</h3>
+              <h3 class="--title">$30</h3>
               <div class="--worktitle">
                 <h1>Power Building Program</h1>
+                <p>
+                  The Powerbuilding Program is a hybrid fitness regimen that
+                  blends powerlifting and bodybuilding techniques. It focuses on
+                  building both strength and muscle mass through compound
+                  movements and targeted isolation exercises, resulting in a
+                  well-rounded and aesthetic physique.
+                </p>
               </div>
             </div>
             <div class="--workoutcards">
               <img src="/assets/images/hyper.png" alt="wala-pa" />
-              <h3>$30</h3>
+              <h3 class="--title">$30</h3>
               <div class="--worktitle">
                 <h1>12 week PPL Hypertrophy Program</h1>
+                <p>
+                  The 12-week PPL Hypertrophy Program is designed to maximize
+                  muscle growth through a Push, Pull, Legs split. It
+                  incorporates progressive overload, compound lifts, and
+                  high-volume training to promote hypertrophy and sculpt a more
+                  muscular physique.
+                </p>
               </div>
             </div>
             <div class="--workoutcards">
               <img src="/assets/images/power.png" alt="wala-pa" />
-              <h3>$30</h3>
+              <h3 class="--title">$30</h3>
               <div class="--worktitle">
                 <h1>Bulking/Cutting Program</h1>
+                <p>
+                  The Bulking/Cutting Program strategically alternates between
+                  phases of caloric surplus for muscle gain and caloric deficit
+                  for fat loss, allowing individuals to optimize their body
+                  composition and achieve their desired fitness goals.
+                </p>
               </div>
             </div>
           </div>
@@ -256,10 +282,18 @@
     <footer class="--footer">
       <div class="--social-list-container">
         <div class="--social">
-          <img src="./assets/images/tiktok-hover.png" alt="" />
+          <a
+            href="https://www.tiktok.com/@fperez_13 
+        "
+            target="_blank"
+          >
+            <img src="./assets/images/tiktok-hover.png" alt="" />
+          </a>
         </div>
         <div class="--social">
-          <img src="./assets/images/instagram-hover.png" alt="" />
+          <a href="https://www.instagram.com/f.perez._/" target="_blank">
+            <img src="./assets/images/instagram-hover.png" alt="" />
+          </a>
         </div>
         <div class="--social">
           <img src="./assets/images/youtube-hover.png" alt="" />
@@ -267,14 +301,6 @@
       </div>
       <p>©2023 FAVIAN PEREZ. ALL RIGHTS RESERVED.</p>
     </footer>
-    <script>
-      function toggleMenu() {
-        const navLinks = document.getElementById("navLinks");
-        const hamburger = document.querySelector(".hamburger");
-
-        navLinks.classList.toggle("active");
-        hamburger.classList.toggle("active");
-      }
-    </script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
