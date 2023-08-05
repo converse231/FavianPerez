@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 6.25rem;
+  padding: 0 3rem;
   height: 134px;
   max-width: 1400px;
   margin: 0 auto;
@@ -52,6 +52,11 @@
   display: flex;
   list-style: none;
   transition: 0.3s;
+}
+
+.links a:hover {
+  color: #f15025;
+  transition: all 0.3s;
 }
 
 .hamburger.active .line1 {
@@ -107,7 +112,7 @@
 
 @media screen and (max-width: 768px) {
   .navbar {
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 2rem;
   }
   .hamburger {
     display: flex;
@@ -116,16 +121,6 @@
     max-width: 26px;
     height: auto;
     margin: 0 3px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navbar {
-    padding: 0.8rem 1rem;
-  }
-  .hamburger {
-    display: flex;
-    z-index: 1000;
   }
   .nav-links {
     display: flex;
@@ -146,7 +141,6 @@
     flex-direction: column;
   }
   .nav-links li {
-    padding: 1rem;
     text-align: center;
   }
   .nav-links a {
@@ -228,15 +222,27 @@
   background-color: #f15025;
   color: #fff;
   margin-top: 0.7rem;
-  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .contact {
   background-color: #f15025;
   margin-right: 0.5rem;
 }
+
+.contact:hover {
+  background-color: transparent;
+}
+
 .work {
   background-color: transparent;
 }
+
+.work:hover {
+  background-color: #f15025;
+}
+
 @media screen and (max-width: 1270px) {
   .hero-img-wrapper {
     display: none;
@@ -314,11 +320,47 @@
         left: 0;
     }
 }
-@media screen and (max-width: 768px){
-  .hero-text-header{
-    width: 100%;
-    max-width: 350px;
-    height: auto;
+.hero-text-sub {
+  color: #fff;
+}
+.hero-btn {
+  height: 42px;
+  width: 210px;
+  border-color: #f15025;
+  border-radius: 8px;
+  background-color: #f15025;
+  color: #fff;
+  margin-top: 0.7rem;
+}
+.contact {
+  background-color: #f15025;
+  margin-right: 0.5rem;
+}
+.work {
+  background-color: transparent;
+}
+@media screen and (max-width: 1270px) {
+  .hero-img-wrapper {
+    display: none;
+  }
+  .social-links-hero {
+    left: 0;
+    position: absolute;
+  }
+  .hero-text-wrapper {
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 0 6.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text-header {
+    font-size: 65px;
   }
   .hero-text-wrapper {
     left: 23%;
