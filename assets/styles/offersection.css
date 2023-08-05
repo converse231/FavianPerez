@@ -1,8 +1,6 @@
 .--offer-container {
   background-color: #000000;
   position: relative;
-  max-width: 1440px;
-  margin: 0 auto;
   height: 100%;
   padding: 1rem 1.3rem 4.75rem;
   min-height: 17.625rem;
@@ -13,6 +11,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #000000;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .--offer-wrapper h1 {
