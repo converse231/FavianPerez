@@ -2,7 +2,7 @@
   position: relative;
   margin: 0 auto;
   max-width: 1400px;
-  padding: 0 1.3rem 6.06rem;
+  padding: 0 1.3rem;
 }
 .--about-wrapper {
   position: relative;
@@ -37,6 +37,7 @@
   line-height: normal;
   padding: 0;
   margin-bottom: clamp(-0.6rem, -1rem + 2.9231vw, -1rem);
+  margin-top: 0;
 }
 .--followers-container p {
   color: #000;
@@ -126,4 +127,10 @@
   border-radius: 10px;
   background: #f15025;
   padding: 0.5rem 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .--followers-container {
+    gap: 2.5rem;
+  }
 }
