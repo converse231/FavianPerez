@@ -52,6 +52,11 @@
   transition: 0.3s;
 }
 
+.links a:hover {
+  color: #f15025;
+  transition: all 0.3s;
+}
+
 .hamburger.active .line1 {
   transform: rotate(-45deg) translate(-7px, 5px);
 }
